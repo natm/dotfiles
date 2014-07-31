@@ -1,0 +1,18 @@
+# ctrl-j
+set -g prefix C-j
+bind C-j send-prefix
+unbind C-j
+
+# behavior
+set -g escape-time 0
+setw -g aggressive-resize on
+
+# colors
+set -g status-bg blue
+set -g status-fg white
+
+set -g status-left '#[fg=white]#H'
+
+set-window-option -g window-status-current-bg yellow
+set-window-option -g window-status-current-fg black
+

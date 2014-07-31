@@ -72,6 +72,10 @@ Host w204
     Hostname workbench.cumulusnetworks.com
     User wbench204
 
+Host w215
+    Hostname workbench.cumulusnetworks.com
+    User wbench215
+
 Host w216
     Hostname workbench.cumulusnetworks.com
     User wbench216
