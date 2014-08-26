@@ -9,6 +9,16 @@ Host clonc
     Port 22
     User nat
 
+Host enw
+    HostName enw.esgob.com
+    Port 22
+    User nat
+
+Host pyped
+    HostName pyped.esgob.com
+    Port 22
+    User nat
+
 Host labpuppet
     HostName labpuppet.hw.esgob.com
     Port 22
