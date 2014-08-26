@@ -68,6 +68,10 @@ Host ixl1
 
 # ccw
 
+Host w102
+    Hostname workbench.cumulusnetworks.com
+    User wbench102
+
 Host w204
     Hostname workbench.cumulusnetworks.com
     User wbench204
