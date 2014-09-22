@@ -44,24 +44,6 @@ Host sw4
     User root
     ProxyCommand ssh -q nat@labpuppet.hw.esgob.com nc -q0 10.1.1.104 22
 
-
-# cumulus
-
-Host monster4
-    HostName monster-04.cumulusnetworks.com
-    Port 9204
-    User nat
-
-Host monster04
-    HostName monster-04.cumulusnetworks.com
-    Port 9204
-    User nat
-
-Host monster-04
-    HostName monster-04.cumulusnetworks.com
-    Port 9204
-    User nat
-
 # ixleeds
 
 Host ixl3
