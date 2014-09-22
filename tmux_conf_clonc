@@ -1,0 +1,7 @@
+set -g default-terminal "screen-256color"
+set -g status-bg colour35
+set -g status-left ' : clonc : '
+set -g status-left "#[bg=colour64]#[fg=colour16]  clonc   "
+set-window-option -g window-status-current-bg yellow
+set -s escape-time 0
+setw -g aggressive-resize on

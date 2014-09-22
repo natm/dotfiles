@@ -1,0 +1,10 @@
+set-option -g status-bg colour235 #base02
+set-option -g status-fg colour136 #yellow
+set-option -g status-attr default
+set-window-option -g window-status-current-fg colour166 #orange
+set-window-option -g window-status-current-bg colour233
+
+set -g status-left "#[bg=colour22]#[fg=colour118]CumulusMV  "
+set -g status-right "%H:%M Pacific "
+set -s escape-time 0
+setw -g aggressive-resize on
