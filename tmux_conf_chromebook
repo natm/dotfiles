@@ -1,3 +1,5 @@
+set -g default-terminal "screen-256color"
+
 # ctrl-j
 set -g prefix C-j
 bind C-j send-prefix
@@ -8,11 +10,12 @@ set -g escape-time 0
 setw -g aggressive-resize on
 
 # colors
-set -g status-bg blue
+set -g status-bg colour17    # dark blue
 set -g status-fg white
 
-set -g status-left '#[fg=white]#H'
 
-set-window-option -g window-status-current-bg yellow
-set-window-option -g window-status-current-fg black
+set-window-option -g window-status-current-bg colour23
+set-window-option -g window-status-current-fg colour156
 
+set -g status-left "#[bg=colour53]#[fg=colour178]Chromebook  "
+set -g status-right "#(date +"%a %_d %b %H:%M") #[bg=colour52] #(cat /sys/class/power_supply/BAT0/capacity)% #[bg=red] #[bg=colour208] #[bg=colour11] #[bg=colour82] #[bg=cyan] #[bg=colour19] #[bg=colour54] "
