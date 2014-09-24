@@ -1,3 +1,20 @@
+# uknof
+
+Host uknof-puppet1
+    Hostname uknof-puppet1.default.uknof.uk0.bigv.io
+    ForwardAgent yes
+
+Host uknof-ns
+    Hostname 212.13.198.182
+#    Hostname uknof-ns.uknof.org.uk
+    ForwardAgent yes
+
+Host uknof-cache1
+    Hostname uknof-cache1.uknof.org.uk
+    ForwardAgent yes
+
+# misc
+
 Host courgette
     HostName courgette.jml.net
     Port 22
@@ -13,11 +30,13 @@ Host enw
     HostName enw.esgob.com
     Port 22
     User nat
+    ForwardAgent yes
 
 Host pyped
     HostName pyped.esgob.com
     Port 22
     User nat
+    ForwardAgent yes
 
 Host labpuppet
     HostName labpuppet.hw.esgob.com
