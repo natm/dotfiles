@@ -1,5 +1,6 @@
 Host *
-    StrictHostKeyChecking yes
+    HashKnownHosts no
+    StrictHostKeyChecking ask
 
 # uknof
 
