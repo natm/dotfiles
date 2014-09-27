@@ -18,4 +18,4 @@ set-window-option -g window-status-current-bg colour23
 set-window-option -g window-status-current-fg colour156
 
 set -g status-left "#[bg=colour53]#[fg=colour178]Chromebook  "
-set -g status-right "#(date +"%a %_d %b %H:%M") #[bg=colour52] #(cat /sys/class/power_supply/BAT0/capacity)% #[bg=red] #[bg=colour208] #[bg=colour11] #[bg=colour82] #[bg=cyan] #[bg=colour19] #[bg=colour54] "
+set -g status-right "#(date +'%a %_d %b %H:%M') #[bg=colour52] #(cat /sys/class/power_supply/BAT0/capacity)% #[bg=red] #[bg=colour208] #[bg=colour11] #[bg=colour82] #[bg=cyan] #[bg=colour19] #[bg=colour54] "

@@ -1,3 +1,6 @@
+Host *
+    StrictHostKeyChecking yes
+
 # uknof
 
 Host uknof-puppet1
@@ -15,24 +18,26 @@ Host uknof-cache1
 
 # misc
 
-Host courgette
+Host courgette courgette.jml.net
     HostName courgette.jml.net
     Port 22
+    ForwardAgent yes
 
 # esgob
 
-Host clonc
+Host clonc clonc.esgob.com
     HostName clonc.esgob.com
     Port 22
     User nat
+    ForwardAgent yes
 
-Host enw
+Host enw enw.esgob.com
     HostName enw.esgob.com
     Port 22
     User nat
     ForwardAgent yes
 
-Host pyped
+Host pyped pyped.esgob.com
     HostName pyped.esgob.com
     Port 22
     User nat
