@@ -1,6 +1,6 @@
 Host *
     HashKnownHosts no
-    StrictHostKeyChecking ask
+#    StrictHostKeyChecking ask
 
 # uknof
 
@@ -144,3 +144,8 @@ Host w406
     User wbench406
     UserKnownHostsFile /dev/null
     StrictHostKeyChecking no
+
+Host wmgmt
+    Hostname workbench.cumulusnetworks.com
+    User cumulus
+    Port 9902
