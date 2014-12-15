@@ -149,3 +149,13 @@ Host wmgmt
     Hostname workbench.cumulusnetworks.com
     User cumulus
     Port 9902
+
+Host walesbench
+    Hostname walesbench.cumulusnetworks.com
+    User cumulus
+    Port 9902
+
+Host ceng-puppet1
+    Hostname 216.129.126.117
+    User nat
+    ForwardAgent yes
