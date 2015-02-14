@@ -159,3 +159,8 @@ Host ceng-puppet1
     Hostname 216.129.126.117
     User nat
     ForwardAgent yes
+
+Host l42ops
+    Hostname 162.248.201.218
+    User root
+    Port 9022
