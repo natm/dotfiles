@@ -44,10 +44,11 @@ Host pyped pyped.esgob.com
     User nat
     ForwardAgent yes
 
-Host labpuppet
-    HostName labpuppet.hw.esgob.com
+Host wyntog wyntog.esgob.com
+    HostName 195.177.253.146
     Port 22
     User nat
+    ForwardAgent yes
 
 Host sw1
     Port 22
