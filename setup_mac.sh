@@ -6,13 +6,24 @@ ln -s $PWD/bash_profile_mac $HOME/.bash_profile
 rm $HOME/.nanorc
 ln -s $PWD/nanorc $HOME/.nanorc
 
-rm $HOME/.vimrv
+rm $HOME/.vimrc
 ln -s $PWD/vimrc $HOME/.vimrc
 
 rm $HOME/.ssh/config
 ln -s $PWD/sshconfig $HOME/.ssh/config
 
+brew install ansible
+brew install fish
+brew install tree
+brew install pwgen
+brew install redis
+brew install ipcalc
+brew install sipcalc
 brew install mtr
+brew install fping
+brew install nmap
+brew install unrar
+
 # brew install Caskroom/cask/google-chrome
 
 
