@@ -30,6 +30,9 @@ brew install mtr
 brew install fping
 brew install nmap
 brew install unrar
+brew install wget
+brew install sslscan
+brew install mobile-shell
 
 # brew install Caskroom/cask/google-chrome
 
