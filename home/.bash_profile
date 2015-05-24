@@ -60,6 +60,10 @@ export PS1="$GREEN\u$YELLOW@$PURPLE\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_c
 }
 prompt
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/nat/google-cloud-sdk/path.bash.inc'
 
