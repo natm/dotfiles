@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
 
-touch $HOME/.hushlogin
 
 rm $HOME/.bash_profile
-ln -s $PWD/bash_profile_mac $HOME/.bash_profile
+ln -s $PWD/home/.bash_profile $HOME/.bash_profile
+
+rm $HOME/.hushlogin
+ln -s $PWD/home/.hushlogin $HOME/.hushlogin
 
 rm $HOME/.nanorc
-ln -s $PWD/nanorc $HOME/.nanorc
+ln -s $PWD/home/.nanorc $HOME/.nanorc
 
 rm $HOME/.vimrc
-ln -s $PWD/vimrc $HOME/.vimrc
+ln -s $PWD/home/.vimrc $HOME/.vimrc
 
 rm $HOME/.ssh/config
-ln -s $PWD/sshconfig $HOME/.ssh/config
+ln -s $PWD/home/.ssh/config $HOME/.ssh/config
 
 brew install ansible
 brew install fish
