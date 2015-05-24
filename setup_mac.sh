@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+touch $HOME/.hushlogin
+
 rm $HOME/.bash_profile
 ln -s $PWD/bash_profile_mac $HOME/.bash_profile
 
