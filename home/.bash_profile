@@ -66,5 +66,5 @@ source '/Users/nat/google-cloud-sdk/path.bash.inc'
 # The next line enables bash completion for gcloud.
 source '/Users/nat/google-cloud-sdk/completion.bash.inc'
 
-eval `ssh-agent -s`
-ssh-add
+eval `ssh-agent -s` &>/dev/null
+ssh-add &>/dev/null
