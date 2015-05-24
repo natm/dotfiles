@@ -4,6 +4,9 @@
 rm $HOME/.bash_profile
 ln -s $PWD/home/.bash_profile $HOME/.bash_profile
 
+rm $HOME/.gitconfig
+ln -s $PWD/home/.gitconfig $HOME/.gitconfig
+
 rm $HOME/.hushlogin
 ln -s $PWD/home/.hushlogin $HOME/.hushlogin
 
