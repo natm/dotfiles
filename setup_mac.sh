@@ -58,6 +58,34 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
+# hide the spotlight icon
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+# expand save panel
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# quit print app once jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# reveal ip and hostname with clicking the clock in login window
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Disabling press-and-hold for special keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
+
+# Safari - don't send search queries to Apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+# Time machine - present it from using new hard drives as a backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+
 
 ########
 # symlinks
