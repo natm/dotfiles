@@ -3,7 +3,6 @@
 sudo -v
 
 ########
-# osx cfg from: https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -20,6 +19,12 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Speed up mission control animation
+defaults write com.apple.dock expose-animation-duration -float 0.12
+
+# disable the animations for opening Quick Look windows
+defaults write -g QLPanelAnimationDuration -float 0
+
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
 
@@ -33,6 +38,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+
+# Always show user libraru
+chflags nohidden ~/Library/
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
@@ -85,7 +93,10 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 # Time machine - present it from using new hard drives as a backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
+# iterm2!
 
+# no job name
+defaults write com.googlecode.iterm2 JobName -bool false
 
 ########
 # symlinks
