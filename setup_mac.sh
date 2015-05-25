@@ -97,6 +97,7 @@ brew install unrar
 brew install wget
 brew install sslscan
 brew install mobile-shell
+brew install colordiff
 
 # brew install Caskroom/cask/google-chrome
 
