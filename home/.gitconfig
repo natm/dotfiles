@@ -5,6 +5,7 @@
 	default = simple
 [core]
 	excludesfile = /Users/nat/.gitignore_global
+	editor = nano
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
