@@ -88,7 +88,7 @@ defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 # hide the spotlight icon
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+sudo chmod 755 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 # expand save panel
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
