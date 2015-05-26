@@ -144,4 +144,23 @@ ln -s $PWD/home/.ssh/config $HOME/.ssh/config
 sudo chown root:wheel /usr/local/Cellar/mtr/0.86/sbin/mtr
 sudo chmod u+s /usr/local/Cellar/mtr/0.86/sbin/mtr
 
+###################
+# dockutil
+
+dockutil --remove "Launchpad"
+dockutil --remove "Mail"
+dockutil --remove "Contacts"
+dockutil --remove "Notes"
+dockutil --remove "Reminders"
+dockutil --remove "Maps"
+dockutil --remove "Photos"
+dockutil --remove "Messages"
+dockutil --remove "FaceTime"
+dockutil --remove "iTunes"
+dockutil --remove "iBooks"
+dockutil --remove "App Store"
+dockutil --remove "Downloads"
+dockutil --add /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
+dockutil --add /opt/homebrew-cask/Caskroom/iterm2/2.0/iTerm.app
+
 exit 0
