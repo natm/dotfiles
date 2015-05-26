@@ -135,6 +135,9 @@ brew tap homebrew/bundle
 brew bundle 
 #brew bundle Caskfile
 
+brew update
+brew upgrade --all
+
 
 sudo chown root:wheel /usr/local/Cellar/mtr/0.86/sbin/mtr
 sudo chmod u+s /usr/local/Cellar/mtr/0.86/sbin/mtr
