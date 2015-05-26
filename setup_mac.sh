@@ -128,7 +128,7 @@ ln -s $PWD/home/.ssh/config $HOME/.ssh/config
 #########
 # brew packages
 
-brew_pkgs=(ansible fish tree pwgen redis ipcalc sipcalc mtr fping nmap unrar wget sslscan mobile-shell colordiff)
+brew_pkgs=(ansible fish tree pwgen redis ipcalc sipcalc mtr fping nmap unrar wget sslscan mobile-shell colordiff caskroom/cask/brew-cask)
 
 for brew_pkg in ${brew_pkgs[@]}; do
     brew install $brew_pkg
