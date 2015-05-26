@@ -30,3 +30,10 @@ $ git clone git@github.com:natm/dotfiles.git
 $ cd dotfiles
 $ ./setup_mac.sh
 ```
+
+## Todo
+
+* setup iterm2
+* configure dock; size, zoom, etc
+* menumeter items
+* remove things i dont use from the dock; iphoto, itunes etc
