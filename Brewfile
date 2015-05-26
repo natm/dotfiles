@@ -1,3 +1,6 @@
+tap caskroom/cask
+brew 'brew-cask'
+
 brew "ansible"
 brew "fish"
 brew "tree"
