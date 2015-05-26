@@ -2,6 +2,12 @@
 
 sudo -v
 
+######
+# aliases
+
+# Start Screen Saver
+alias ss='open /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app'
+
 ########
 
 # Disable the sound effects on boot
