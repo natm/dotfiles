@@ -4,6 +4,19 @@ sudo -v
 
 ## xcode-select --install
 
+#########
+# brew packages
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew tap homebrew/bundle
+brew bundle 
+#brew bundle Caskfile
+
+brew update
+brew upgrade --all
+
+
+
 ######
 # aliases
 
@@ -126,17 +139,6 @@ ln -s $PWD/home/.vimrc $HOME/.vimrc
 
 rm $HOME/.ssh/config
 ln -s $PWD/home/.ssh/config $HOME/.ssh/config
-
-#########
-# brew packages
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew tap homebrew/bundle
-brew bundle 
-#brew bundle Caskfile
-
-brew update
-brew upgrade --all
 
 
 sudo chown root:wheel /usr/local/Cellar/mtr/0.86/sbin/mtr
