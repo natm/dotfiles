@@ -1,5 +1,5 @@
-tap caskroom/cask
-brew 'brew-cask'
+tap "caskroom/cask"
+brew "brew-cask"
 
 brew "ansible"
 brew "fish"
