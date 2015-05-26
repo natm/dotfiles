@@ -128,21 +128,11 @@ ln -s $PWD/home/.ssh/config $HOME/.ssh/config
 #########
 # brew packages
 
-brew install ansible
-brew install fish
-brew install tree
-brew install pwgen
-brew install redis
-brew install ipcalc
-brew install sipcalc
-brew install mtr
-brew install fping
-brew install nmap
-brew install unrar
-brew install wget
-brew install sslscan
-brew install mobile-shell
-brew install colordiff
+brew_pkgs=(ansible fish tree pwgen redis ipcalc sipcalc mtr fping nmap unrar wget sslscan mobile-shell colordiff)
+
+for brew_pkg in ${brew_pkgs[@]}; do
+    brew install $brew_pkg
+done
 
 # brew install Caskroom/cask/google-chrome
 
