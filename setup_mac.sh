@@ -133,8 +133,7 @@ ln -s $PWD/home/.ssh/config $HOME/.ssh/config
 
 brew tap homebrew/bundle
 brew bundle 
-
-# brew install Caskroom/cask/google-chrome
+#brew bundle Caskfile
 
 
 sudo chown root:wheel /usr/local/Cellar/mtr/0.86/sbin/mtr
