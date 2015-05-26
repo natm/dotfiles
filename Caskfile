@@ -1,1 +1,7 @@
 cask "google-chrome"
+cask "google-cloud-sdk"
+cask "google-hangouts"
+cask "iterm2"
+cask "menumeters"
+cask "virtualbox"
+cask "vlc"
