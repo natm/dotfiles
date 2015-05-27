@@ -10,7 +10,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap homebrew/bundle
 brew bundle 
-#brew bundle Caskfile
+brew bundle --file=Caskfile
 
 brew update
 brew upgrade --all
