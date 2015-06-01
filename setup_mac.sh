@@ -163,6 +163,7 @@ dockutil --remove "Downloads"
 dockutil --remove "Safari"
 dockutil --add /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
 dockutil --add /opt/homebrew-cask/Caskroom/iterm2/2.0/iTerm.app
+dockutil --add /opt/homebrew-cask/Caskroom/hipchat/latest/HipChat.app
 dockutil --move "Google Chrome" --position 1
 
 exit 0
