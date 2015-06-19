@@ -1,3 +1,15 @@
+# Netflix OpenConnect octools
+if [ -f /Users/nat/stash/ot/octools ]; then
+  export OC_REPO_PATH=/Users/nat/stash/ot/octools
+  source ${OC_REPO_PATH}/shell/oc_bash_profile.sh
+fi
+
+# Google Cloud SDK
+if [ -f /Users/nat/google-cloud-sdk ]; then
+  source '/Users/nat/google-cloud-sdk/path.bash.inc'
+  source '/Users/nat/google-cloud-sdk/completion.bash.inc'
+fi
+
 function git_color {
   local git_status="$(git status 2> /dev/null)"
 
@@ -56,19 +68,18 @@ function prompt {
   local CYANBOLD="\[\033[1;36m\]"
   local WHITE="\[\033[0;37m\]"
   local WHITEBOLD="\[\033[1;37m\]"
-export PS1="$GREEN\u$YELLOW@$PURPLE\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_color)\]\$(git_branch)\[\033[00m\]\$ "
+  # special prompt for netflix laptop
+  if [ "$(hostname -s)" == "natnf" ]; then
+    export PS1="$REDBOLD\u$YELLOW@$RED\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_color)\]\$(git_branch)\[\033[00m\]\$ "
+  else
+    export PS1="$GREEN\u$YELLOW@$PURPLE\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_color)\]\$(git_branch)\[\033[00m\]\$ "
+  fi
 }
 prompt
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/nat/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-source '/Users/nat/google-cloud-sdk/completion.bash.inc'
 
 eval `ssh-agent -s` &>/dev/null
 ssh-add &>/dev/null
