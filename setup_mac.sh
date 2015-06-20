@@ -119,6 +119,14 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # no job name
 defaults write com.googlecode.iterm2 JobName -bool false
 
+# stop osx hostname changing
+
+sudo /usr/libexec/PlistBuddy -c "Add :ProgramArguments: string --no-namechange" /System/Library/LaunchDaemons/com.apple.discoveryd.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.discoveryd.plist
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.discoveryd.plist
+
+
+
 ########
 # symlinks
 

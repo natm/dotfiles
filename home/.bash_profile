@@ -1,11 +1,11 @@
 # Netflix OpenConnect octools
-if [ -f /Users/nat/stash/ot/octools ]; then
+if [ -d /Users/nat/stash/ot/octools ]; then
   export OC_REPO_PATH=/Users/nat/stash/ot/octools
   source ${OC_REPO_PATH}/shell/oc_bash_profile.sh
 fi
 
 # Google Cloud SDK
-if [ -f /Users/nat/google-cloud-sdk ]; then
+if [ -d /Users/nat/google-cloud-sdk ]; then
   source '/Users/nat/google-cloud-sdk/path.bash.inc'
   source '/Users/nat/google-cloud-sdk/completion.bash.inc'
 fi
