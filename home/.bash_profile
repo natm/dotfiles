@@ -69,7 +69,7 @@ function prompt {
   local WHITE="\[\033[0;37m\]"
   local WHITEBOLD="\[\033[1;37m\]"
   # special prompt for netflix laptop
-  if [ "$(hostname -s)" == "natnf" ]; then
+  if  [ "$(hostname -s)" == "natnf" ] || [ "$(hostname -s)" == "mininf" ]; then
     export PS1="$REDBOLD\u$YELLOW@$RED\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_color)\]\$(git_branch)\[\033[00m\]\$ "
   else
     export PS1="$GREEN\u$YELLOW@$PURPLE\h\[\033[00m\]:$CYAN\w\[\033[00m\] \[\$(git_color)\]\$(git_branch)\[\033[00m\]\$ "
