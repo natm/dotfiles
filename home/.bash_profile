@@ -81,5 +81,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# aliases
+alias mini='ssh nat@mininf.hw.esgob.com'
+
 eval `ssh-agent -s` &>/dev/null
 ssh-add &>/dev/null
