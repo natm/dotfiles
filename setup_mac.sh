@@ -175,4 +175,6 @@ dockutil --add /opt/homebrew-cask/Caskroom/hipchat/latest/HipChat.app
 dockutil --add /opt/homebrew-cask/Caskroom/atom/latest/Atom.app
 dockutil --move "Google Chrome" --position 1
 
+pip install virtualenv
+
 exit 0

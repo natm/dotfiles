@@ -1,3 +1,8 @@
+export PIP_REQUIRE_VIRTUALENV=true
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
+
 # Netflix OpenConnect octools
 if [ -d /Users/nat/stash/ot/octools ]; then
   export OC_REPO_PATH=/Users/nat/stash/ot/octools
