@@ -12,4 +12,5 @@ cask "atom"
 cask "mou"
 cask "github-desktop"
 cask "sourcetree"
-
+cask "spotify"
+cask "airfoil"
