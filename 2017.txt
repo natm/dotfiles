@@ -1,0 +1,17 @@
+brew install bash-git-prompt
+
+
+bash_profile...
+
+
+
+eval $(docker-machine env)
+GIT_PROMPT_THEME=Single_line_Solarized
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+fi
+
+
+brew install homebrew/dupes/nano
+echo "include /usr/local/share/nano/*.nanorc" > ~/.nanorc
